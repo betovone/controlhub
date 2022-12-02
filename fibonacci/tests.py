@@ -35,12 +35,4 @@ class FibonacciTests(APITestCase):
             else:
                 self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
-
-        #print("URL: ", url)
-        #si fuera POST
-        #url = reverse('fibonacci-index')
-        #data = {'index': indice}
-        #response = self.client.post(url, data, format='json')
-        #self.assertEqual(len(response.data), 1)
-        #self.assertEqual(Account.objects.get().name, 'DabApps')
         
